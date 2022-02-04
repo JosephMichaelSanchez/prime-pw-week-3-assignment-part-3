@@ -59,7 +59,11 @@ for(transfer of supplyChanges){
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
-
+let total=0
+for (let x=0; x<supplyChanges.length; x++){
+  total=total + supplyChanges[x]
+}
+console.log(total)
 // 9. We have a large stash of parts in our warehouse that we
 //    need to box up and get ready for shipment.
 //    There are 572 parts in total, and each box holds 7 parts.
