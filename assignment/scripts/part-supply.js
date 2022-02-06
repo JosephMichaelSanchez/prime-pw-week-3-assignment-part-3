@@ -56,14 +56,23 @@ for(transfer of supplyChanges){
     console.log('Removed ' + -transfer + ' parts.')
   }
 }
+//END LOOP
+//We created a variable named "transfer" to represent the value in the array that is the number of parts removed or added.
+//The loop then checks the value of "transfer" in relation to '0' and console.logs the appropriate string of text.
+
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
-let total=0
+let sum=0
 for (let x=0; x<supplyChanges.length; x++){
-  total=total + supplyChanges[x]
+  sum=sum + supplyChanges[x]
 }
-console.log(total)
+//END LOOP
+console.log(sum)
+//We created a variable named "sum" and gave it an intial value of '0'.
+//The loop will run through the array and add each value in it to "sum".
+//Once we have looped through the array, we can console.log "sum" to get the total number of supplies.
+
 // 9. We have a large stash of parts in our warehouse that we
 //    need to box up and get ready for shipment.
 //    There are 572 parts in total, and each box holds 7 parts.
@@ -82,3 +91,10 @@ while (parts>=7){
     console.log('There are ' + parts + ' parts remaining.');
   }
 }
+//END OF LOOP
+//We created a variable named "parts" to represent the total number of parts we have, and it's initial value is 572.
+//We created a variable named "boxes" to represent each box we have filled with 7 parts, and it's initial value is 0.
+//"parts-=7" represents us subtracting 7 from "parts" each time through the loop.
+//"boxes++" represents us adding 1 to "boxes" each time through the loop.
+//"if (parts<7)" is us checking if we no longer have enough parts to fill a box after each time through the loop.
+//Once "parts" reaches a value less than 7, we will console.log how many boxes we filled, and how many parts are left.
