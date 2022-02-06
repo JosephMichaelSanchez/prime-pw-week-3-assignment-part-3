@@ -1,1 +1,9 @@
 /* give your assignment a fun background color */
+body {
+  background-image: url("https://www.dealernewstoday.com/wp-content/uploads/2019/06/black-and-white-car-engine-chrome-190574-1-696x392.jpg");
+  background-color: #cccccc;
+}
+header {
+  font-family: Tahoma, sans-serif;
+  color: #DC143C;
+}
